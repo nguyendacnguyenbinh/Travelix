@@ -69,19 +69,21 @@ ul{
     z-index: 1;
     color: #fff;
     font-size: 13px;
-    padding: 13px 30px;
+    padding: 16px 30px;
     position: relative;
     display: inline-block;
     cursor: pointer;
     text-transform: uppercase;
 }
 
-.search-header__item.active{
+.search-header__item.active,
+.search-container__item.active{
     color: #fff;
     background: #fa9e1b;
 }
 
-.search-header__item.active img{
+.search-header__item.active img,
+.search-container__item.active img{
     filter: brightness(200%) grayscale(100%);
 }
 

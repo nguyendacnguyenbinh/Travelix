@@ -41,13 +41,24 @@ headerSearchIcon.addEventListener('click', (e)=> {
 })
 
 
-// container header list active
+// header list active
 const searchItem = $$('.search-header__item')
 
 searchItem.forEach(item => {
     item.addEventListener('click', (e)=>{
         e.preventDefault()
         $('.search-header__item.active').classList.remove('active')
+        item.classList.add('active')
+    })
+});
+
+// container list active
+const searchContainerItem = $$('.search-container__item')
+
+searchContainerItem.forEach(item => {
+    item.addEventListener('click', (e)=>{
+        e.preventDefault()
+        $('.search-container__item.active').classList.remove('active')
         item.classList.add('active')
     })
 });

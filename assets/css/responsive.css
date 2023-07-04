@@ -42,6 +42,13 @@
     span.header-slider__heading{
         font-size: 55px;
     }
+
+    .search-container,
+    .tours-list{
+        margin: 0 8px;
+    }
+
+ 
 }
 
 
