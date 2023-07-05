@@ -414,24 +414,29 @@ span.header-slider__heading{
 }
 
 .tours-item__rating,
-.package-rating{
+.package-rating,
+.offers-item__rating{
     font-size: 18px;
 }
 
 .tours-item__rating i:nth-child(1),
-.package-rating i:nth-child(1){
+.package-rating i:nth-child(1),
+.offers-item__rating i:nth-child(1){
    color: #ffeb8d;
 }
 .tours-item__rating i:nth-child(2),
-.package-rating i:nth-child(2){
+.package-rating i:nth-child(2),
+.offers-item__rating i:nth-child(2){
    color: #fbe274;
 }
 .tours-item__rating i:nth-child(3),
-.package-rating i:nth-child(3){
+.package-rating i:nth-child(3),
+.offers-item__rating i:nth-child(3){
    color: #ffe056;
 }
 .tours-item__rating i:nth-child(4),
-.package-rating i:nth-child(4){
+.package-rating i:nth-child(4),
+.offers-item__rating i:nth-child(4){
    color: #ffd92f;
 }
 
@@ -443,14 +448,14 @@ span.header-slider__heading{
 }
 
 .package-container{
-    width: 100%;
     background-color: #fff;
     padding: 60px 50px;
     text-align: center;
-
 }
 
-.package-title{
+.package-title,
+.offers-title,
+.about-title{
     font-size: 32px;
     color: #000;
     text-transform: uppercase;
@@ -471,4 +476,158 @@ span.header-slider__heading{
     margin-bottom: 50px;
     padding: 0 20px;
     line-height: 2;
+}
+
+.offers{
+    padding: 60px 0;
+    background: #f3f6f9;
+}
+
+.offers-item{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.offers-item__background{   
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 50%;
+    padding-top: 60%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.offers-item__name{
+    background: #fa9e1b;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+}
+
+.offers-item__container{   
+    margin-left: 10px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.offers-item__price{
+    font-size: 36px;
+    color: #eda84a;
+}
+
+.offers-item__price span{
+    font-size: 14px;
+    color: #919191;
+}
+
+.offers-item__desc{
+    font-size: 14px;
+    color: #919191;
+    line-height: 2;
+    margin-top: 10px;
+}
+
+.offers-item__action{
+    margin-top: 10px;
+}
+
+.offers-item__action img{
+    margin-left: 10px;
+}
+
+.offers-item__link{
+    text-decoration: none;
+    color: #2d2d2d;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.about{
+    padding: 90px 0;
+}
+
+.about-item{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 130%;
+    position: relative;
+    border-radius: 10px;    
+}
+
+.about-content{
+    padding-top: 40px;
+}
+
+.about-item__icon{
+    background: #fa9e1b;
+    position: absolute;
+    top: -7%;
+    left: 13%;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.about-item__icon:hover{    
+    filter: brightness(120%);
+}
+
+.about-item__content{
+    background: #31124bcc;
+    color: #fff;
+    font-size: 14px;
+    padding: 0 40px;
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+    border-bottom-left-radius: 10px;    
+    border-bottom-right-radius: 10px;    
+
+}
+
+.about-item__header{
+    position: absolute;
+    top: -12%;
+    left: 13%;
+    padding: 8px 12px;
+    background-color: #fff;
+   
+}
+
+.about-item__name{
+    font-size: 14px;
+    color: #2d2d2d;
+}
+
+.about-item__date{
+    font-size: 11px;
+    color: #2d2d2d;
+}
+
+.about-item__body span{
+    display: block;
+    font-size: 20px;
+    margin: 35px 0 10px;
+   
+
+}
+
+.about-item__body p{
+    font-size: 14px;
+    line-height: 2;
+   
+
 }

@@ -25,6 +25,11 @@
     .hide-on-tb-mb {
         display: none;
     }   
+
+    .package-container{
+        padding: 60px 30px;
+        margin: 0 10px;
+    }
 }
 
 
@@ -48,7 +53,14 @@
         margin: 0 8px;
     }
 
- 
+    .offers-content,
+    .about-content{
+        margin: 0 4px;
+    }
+
+    .about-item{
+        margin-bottom: 40px;
+    }
 }
 
 
