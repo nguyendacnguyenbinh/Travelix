@@ -54,12 +54,20 @@
     }
 
     .offers-content,
-    .about-content{
+    .about-content,
+    .trending-container{
         margin: 0 4px;
     }
 
     .about-item{
         margin-bottom: 40px;
+    }
+
+    .trending-item{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }
 

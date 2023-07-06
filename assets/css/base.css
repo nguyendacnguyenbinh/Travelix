@@ -38,6 +38,11 @@
     padding: 0 10px;
 }
 
+.header-topbar__contact li:hover a,
+.header-topbar__login li:hover a{
+    color: #fa9e1b;
+}
+
 .header-topbar__contact .phone{
     margin-right: 20px;
 }
@@ -455,7 +460,8 @@ span.header-slider__heading{
 
 .package-title,
 .offers-title,
-.about-title{
+.about-title,
+.trending-title{
     font-size: 32px;
     color: #000;
     text-transform: uppercase;
@@ -621,13 +627,140 @@ span.header-slider__heading{
     display: block;
     font-size: 20px;
     margin: 35px 0 10px;
-   
-
 }
 
 .about-item__body p{
     font-size: 14px;
-    line-height: 2;
-   
+    line-height: 2;   
+ }
 
+ .trending{
+    margin-top: 50px;
+    position: relative;
+ }
+
+ .trending::before{
+    position: absolute;
+    content: "";
+    top: -50px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(to right, #fa9e1b, #8d4fff);;
+ }
+
+ .trending-item{
+    display: flex;
+    margin-bottom: 20px;
+ }
+ .trending-item__background{
+    overflow: hidden;
+    border-radius: 10px;   
+ }
+
+ .trending-item__background img{
+     width: 82px;
+     height: 76px;
+ }
+
+.trending-item__background:hover img{   
+    transition: transform ease .3s;
+    transform: rotate(5deg) scale(1.2);
+}
+
+.trending-item__content{
+    margin-left: 10px;
+}
+
+.trending-item__title{
+    color: #000;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.trending-item__price{
+    font-size: 14px;
+    color: #fa9e1b;
+    margin: 5px 0;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.trending-item__name{
+    font-size: 15px;
+    color: #ccc;
+    text-transform: uppercase;
+}
+
+.contact{
+    height: 100vh;
+    position: relative;
+    margin-top: 50px;
+}
+
+.contact-background{
+    background-image: url(/assets/images/contactbg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 105%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.contact-container{
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(to right, #fa9e1b, #8d4fff);
+    padding: 80px 50px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.contact-title{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.contact-form{
+    margin-top: 50px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    margin: 0 10px 20px 0;
+    padding: 8px 12px;
+    border-bottom: #fff solid 1px;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+    color: #fff;
+    text-align: start;
+}
+
+.contact-input1{
+    width: 100%;
+}
+
+.contact-input__button{
+    text-transform: uppercase;
+    color: #fff;
+    font-family: unset;
+    font-size: 14px;
+    text-align: center;
+    padding: 15px 30px;
+    background: #31124b;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    margin-top: 40px;
+    cursor: pointer;
 }
