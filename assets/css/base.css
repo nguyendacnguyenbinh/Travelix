@@ -81,7 +81,6 @@
     font-weight: 700;
     font-size: 30px;
     color: #fff;
-
 }
 
 .header-nav__logo img{
@@ -693,14 +692,13 @@ span.header-slider__heading{
 }
 
 .contact{
-    height: 100vh;
     position: relative;
     margin-top: 50px;
 }
 
 .contact-background{
     background-image: url(/assets/images/contactbg.webp);
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 105%;
@@ -763,4 +761,145 @@ span.header-slider__heading{
     border-radius: 30px;
     margin-top: 40px;
     cursor: pointer;
+}
+
+.footer-logo a{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+}
+
+.footer{
+    background-color: #31124b;
+    color: #fff;
+}
+
+.footer-container{
+    padding-top: 50px;
+}
+
+.footer-item__name{
+    display: flex;
+    align-items: flex-end;
+    height: 47px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.footer-logo img{
+    margin-right: 10px;
+}
+
+.footer-item__content{
+    margin-top: 20px;
+}
+
+.footer-desc{
+    line-height: 2;
+}
+
+.footer-social-list{
+    display: flex;
+    margin-top: 20px;
+}
+
+.footer-social-list li{
+    height: 30px;
+    width: 30px;
+    border: #fa9e1b solid 1px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social-list li:hover{
+    background-color: #fa9e1b;
+}
+
+.footer-social-list li:hover a{
+    color: #000;
+}
+
+.footer-social-list a{
+    color: #fff;
+}
+
+.footer-blog__item{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer-blog__img{
+    height: 60px;
+    width: 60px;
+}
+
+.footer-blog__content{
+    margin-left: 10px;
+}
+
+.footer-blog__name{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-blog__name:hover{
+    color: #fa9e1b;
+    cursor: pointer;
+}
+
+.footer-blog__date{
+    font-size: 12px;
+    color: #fa9e1b;
+}
+
+.footer-tag__links{
+    display: inline-block;
+    padding: 6px 20px;
+    border: #fa9e1b solid 1px;
+    margin: 0 8px 10px 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+
+.footer-tag__links:hover{
+    background-color: #fa9e1b;
+}
+
+.footer-info__item{
+    margin: 24px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-info__item-img{
+    margin-right: 5px;
+    width: 19px;
+}
+
+.footer-info__item-content{
+    font-size: 14px;
+}
+
+.footer-info__item-content:hover{
+    color: #fa9e1b;
+    cursor: pointer;
+}
+
+
+.footer-copyright{
+    text-align: center;
+    padding: 30px 0 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.footer-copyright a{
+    color: #fa9e1b;
 }
